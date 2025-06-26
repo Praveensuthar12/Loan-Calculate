@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1565c0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main {
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    background-color: white;
+    /* Prevent inherited bg from * */
+}
+
+header {
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #b6b4b4;
+}
+
+.main p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 20px;
+}
+
+label {
+    display: flex;
+    padding-top: 5px;
+    color: #333;
+}
+
+.input-container {
+    padding-top: 10px;
+}
+
+input {
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1.3px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="button"] {
+    background-color: #1565c0;
+    color: white;
+    width: 100%;
+    margin-top: 15px;
+}
+
+button[type="button"]:hover {
+    background-color: #031c41;
+    transform: scale(1.02);
+}
+
+h4 {
+    margin-top: 15px;
+    color: #000;
+    text-align: center;
+}
+
+.btn-grp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.btn-grp button[type="submit"],
+.btn-grp button[type="reset"] {
+    flex: 1 1 45%;
+    padding: 10px;
+}
+
+.btn-grp button[type="submit"] {
+    background-color: #0d47a1;
+    color: white;
+}
+
+.btn-grp button[type="submit"]:hover {
+    background-color: #3cf379;
+    color: #000;
+}
+
+.btn-grp button[type="reset"] {
+    background-color: #1565c0;
+    color: white;
+}
+
+.btn-grp button[type="reset"]:hover {
+    background-color: #e3f2fd;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 425px) {
+    .main {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .main p {
+        font-size: 16px;
+    }
+
+    header {
+        font-size: 14px;
+    }
+
+    input,
+    button {
+        font-size: 14px;
+    }
+
+    .btn-grp {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-grp button {
+        width: 100%;
+    }
+}

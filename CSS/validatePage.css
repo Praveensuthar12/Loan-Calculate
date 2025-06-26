@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Typography */
+h3 {
+    font-size: 18px;
+    color: #010c18;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+/* Input styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+/* Button group */
+.btn-grp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    flex: 1 1 45%;
+    min-width: 120px;
+}
+
+button[type="submit"],
+button[type="reset"] {
+    background-color: #0d47a1;
+    color: white;
+    margin-bottom: 5px;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+    background-color: #031c41;
+    transform: scale(1.02);
+}
+
+strong {
+    font-size: 20px;
+    color: green;
+    margin-top: 8px;
+    display: inline-block;
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p,
+    label,
+    input[type="text"],
+    button {
+        font-size: 14px;
+    }
+
+    .btn-grp {
+        flex-direction: column;
+        gap: 5px;
+        /* Set gap between submit and reset buttons */
+    }
+
+    button {
+        width: 100%;
+    }
+}
